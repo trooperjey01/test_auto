@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//input[@type = 'checkbox' and @id = 'terms']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#terms</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

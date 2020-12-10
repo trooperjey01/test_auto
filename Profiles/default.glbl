@@ -24,4 +24,9 @@
       <initValue>'http://shop.demoqa.com/checkout/'</initValue>
       <name>URL_Checkout</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>Timeout_Medium</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

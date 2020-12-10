@@ -26,24 +26,24 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import internal.GlobalVariable
 
 public class PageOrderReceived {
-	
+
 	@Keyword
 	boolean isDisplayed() {
-		return WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Order_Received/div_order-detail'), GlobalVariable.Timeout_Small, FailureHandling.OPTIONAL)
+		return WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Order_Received/div_order-detail'), GlobalVariable.Timeout_Medium, FailureHandling.OPTIONAL)
 	}
-	
+
 	@Keyword
 	boolean isSuccessMessageDisplayed() {
 		return WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Order_Received/msg_order-received'), GlobalVariable.Timeout_Small, FailureHandling.OPTIONAL)
 	}
-	
+
 	@Keyword
 	boolean isOrderDetailsDisplayed() {
 		boolean res = false
 		if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Order_Received/table_order-details'), GlobalVariable.Timeout_Small, FailureHandling.OPTIONAL)){
 			WebDriver driver = DriverFactory.getWebDriver()
 			WebElement table = WebUiCommonHelper.findWebElement(findTestObject("Object Repository/Page_Order_Received/table_order-details"), GlobalVariable.Timeout_Small)
-			List<WebElement> listProducts = table.findElements(By.xpath('//tbody/tr'))
+			List<WebElement> listProducts = table.findElements(By.cssSelector('tbody>tr'))
 			if (listProducts.size() > 0) {
 				println "total size : " + listProducts.size()
 				res = true

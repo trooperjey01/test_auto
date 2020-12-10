@@ -6,14 +6,17 @@
    <elementGuidId>ae1d8bae-2470-469b-a03a-083472dd7361</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>*.noo-checkout-complete</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[contains(@class, 'noo-checkout-complete')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

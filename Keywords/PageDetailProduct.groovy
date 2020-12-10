@@ -21,27 +21,27 @@ import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable
 
 public class PageDetailProduct {
-	
+
 	@Keyword
 	boolean isDisplayed(){
 		return WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Detail_Product/body'), GlobalVariable.Timeout_Small, FailureHandling.OPTIONAL)
 	}
-	
+
 	@Keyword
 	void selectColorByIndex(int idx) {
 		WebUI.selectOptionByIndex(findTestObject('Object Repository/Page_Detail_Product/select_color'), idx)
 	}
-	
+
 	@Keyword
 	void selectSizeByIndex(int idx) {
 		WebUI.selectOptionByIndex(findTestObject('Object Repository/Page_Detail_Product/select_size'), idx)
 	}
-	
+
 	@Keyword
 	void clickOnAddToCart() {
 		WebUI.click(findTestObject('Object Repository/Page_Detail_Product/btn_add-to-cart'))
 	}
-	
+
 	@Keyword
 	void setQuantity(int qty) {
 		String strQty = String.valueOf(qty)
@@ -50,31 +50,31 @@ public class PageDetailProduct {
 		WebUI.sendKeys(inputQty, Keys.chord(Keys.BACK_SPACE))
 		WebUI.sendKeys(inputQty, strQty)
 	}
-	
+
 	@Keyword
 	double getProductPrice() {
 		return Double.parseDouble(WebUI.getText(findTestObject('Object Repository/Page_Detail_Product/product_price')).substring(1))
 	}
-	
+
 	@Keyword
 	String getProductName() {
 		return WebUI.getText(findTestObject('Object Repository/Page_Detail_Product/product_name'))
 	}
-	
+
 	@Keyword
 	boolean isSuccessMessageDisplayed() {
 		String successMsg = WebUI.getText(findTestObject('Object Repository/Page_Detail_Product/success_message'))
 		boolean res = false
 		// can be has been added or have been added (depends of quantity)
 		if (successMsg.matches('(?s)(?i)(.*)'+getProductName() + '(.*) been added to your cart.')) {
-			res = true		
+			res = true
 		}
 		return res
 	}
-	
+
 	@Keyword
 	void clickOnViewCart() {
 		WebUI.click(findTestObject('Object Repository/Page_Detail_Product/btn_view-cart'))
 	}
-	
+
 }

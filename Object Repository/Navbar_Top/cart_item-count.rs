@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//span[@class = 'cart-name-and-total']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.cart-name-and-total</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

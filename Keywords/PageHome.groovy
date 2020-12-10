@@ -43,7 +43,7 @@ public class PageHome {
 			action.moveToElement(productItem).perform()
 			try {
 				WebDriverWait wait = new WebDriverWait(driver, 10)
-				WebElement hyperlinkDetailProduct = wait.until(ExpectedConditions.elementToBeClickable(productItem.findElement(By.xpath("//a[@data-product_sku]"))))
+				WebElement hyperlinkDetailProduct = wait.until(ExpectedConditions.elementToBeClickable(productItem.findElement(By.cssSelector("a[data-product_sku]"))))
 				hyperlinkDetailProduct.click()
 			} catch(TimeoutException e) {
 				println("Timeout, no hyperlink clickable")

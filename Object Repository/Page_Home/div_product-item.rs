@@ -6,13 +6,17 @@
    <elementGuidId>229c03d0-2273-47e5-b147-17fe480a2340</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>div.noo-product-item</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[contains(@class,&quot;noo-product-item&quot;)]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

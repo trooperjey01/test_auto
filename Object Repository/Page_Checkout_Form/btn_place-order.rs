@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//button[@id = 'place_order']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button#place_order</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

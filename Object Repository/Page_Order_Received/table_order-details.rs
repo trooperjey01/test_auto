@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//table[contains(@class, 'order_details')]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>table.order_details</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

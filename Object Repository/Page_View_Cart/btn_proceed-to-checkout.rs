@@ -6,6 +6,10 @@
    <elementGuidId>ca4854c2-8361-4059-a4d3-68f9be1c71f7</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>*.wc-proceed-to-checkout>a.checkout-button</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[contains(@class, 'wc-proceed-to-checkout')]/a[contains(@class, 'checkout-button')]</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//a[contains(@class, 'checkout-button')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

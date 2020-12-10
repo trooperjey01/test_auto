@@ -16,6 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.URL_HomePage)
+WebUI.maximizeWindow()
 CustomKeywords.'PageHome.clickOnFirstProduct'()
 
 //critère d'acceptation: on arrive bien sur une page produit apres avoir clique sur celui-ci

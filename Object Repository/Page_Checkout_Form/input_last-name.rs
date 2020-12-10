@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//input[@id = 'billing_last_name']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#billing_last_name</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

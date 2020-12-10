@@ -29,6 +29,11 @@ public class GlobalVariable {
      */
     public static Object URL_Checkout
      
+    /**
+     * <p></p>
+     */
+    public static Object Timeout_Medium
+     
 
     static {
         try {
@@ -40,6 +45,7 @@ public class GlobalVariable {
             Timeout_Small = selectedVariables['Timeout_Small']
             URL_Cart = selectedVariables['URL_Cart']
             URL_Checkout = selectedVariables['URL_Checkout']
+            Timeout_Medium = selectedVariables['Timeout_Medium']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

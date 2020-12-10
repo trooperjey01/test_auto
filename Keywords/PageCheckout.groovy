@@ -23,7 +23,7 @@ public class PageCheckout {
 	@Keyword
 	boolean isDisplayed() {
 		boolean res = false
-		if (WebUI.getUrl() == GlobalVariable.URL_Checkout) 
+		if (WebUI.getUrl() == GlobalVariable.URL_Checkout)
 			res = true
 		return res
 	}
@@ -42,7 +42,7 @@ public class PageCheckout {
 	void setStreetAdress(String adress){
 		WebUI.setText(findTestObject('Object Repository/Page_Checkout_Form/input_adress-1'), adress)
 	}
-	
+
 	@Keyword
 	void setPostcode(String zip){
 		WebUI.setText(findTestObject('Object Repository/Page_Checkout_Form/input_postcode'), zip)
@@ -70,7 +70,7 @@ public class PageCheckout {
 			WebUI.click(findTestObject('Object Repository/Page_Checkout_Form/checkbox_agree-conditions'))
 		}
 	}
-	
+
 	@Keyword
 	void clickOnBtnPlaceOrder(){
 		WebUI.click(findTestObject('Object Repository/Page_Checkout_Form/btn_place-order'))

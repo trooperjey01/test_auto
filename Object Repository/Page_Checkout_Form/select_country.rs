@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//select[@id = 'billing_country']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>select#billing_country</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

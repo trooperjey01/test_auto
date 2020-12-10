@@ -6,6 +6,10 @@
    <elementGuidId>db28c319-eb7d-4b98-8aa4-afd13f10f69f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>form>table.shop_table</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//form/table[contains(@class, 'shop_table')]</value>
       </entry>
@@ -14,6 +18,6 @@
          <value>//table[contains(@class, 'shop_table')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

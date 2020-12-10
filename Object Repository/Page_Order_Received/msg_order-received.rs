@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[contains(@class, 'woocommerce-thankyou-order-received')]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>*.woocommerce-thankyou-order-received</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
